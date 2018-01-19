@@ -29,9 +29,6 @@ class Guide
 		# action loop
 		result = nil
 		until result == :quit
-			action = get_action
-			#  what do you want to do? (list, find, add, quit)
-			#  do that action
 			action, args = get_action
 			result = do_action(action, args)
 		end
